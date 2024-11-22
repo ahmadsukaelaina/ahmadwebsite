@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="25.jpg" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="23.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="24.jpg" alt="Slide 3">
+            </div>
+            <button class="carousel-prev">&#10094;</button>
+            <button class="carousel-next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>SMK Muhammadiyah adalah SMK pusat keungggulan yang ada di ambon yang memiliki banyak jurusan seperti Teknik Jaringan Komputer dan Telekomunikasi, Teknik Instalasi Tenaga Listrik, Desain Pemodelan dan Informasi Bangunan, dan Akuntansi dan Keuangan dan Lembaga</p>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+        <div class="card">
+            <img src="18.jpg" alt="Card 1">
+            <h3>Lomba 17 Agustus 2024</h3>
+            <p>Pada tanggal 17 Agustus diadakan lomba gawang mini dan tarik tambang yang diikuti oleh guru-guru di SMK Muhammadiyah.</p>
+        </div>
+        <div class="card">
+            <img src="17.jpg" alt="Card 2">
+            <h3>Porseni</h3>
+            <p>Pembukaan Porseni yang diadakan di SMK Muhammadiyah yang memiliki kategori cerdas cermat, design poster, dan turnamen esport</p>
+        </div>
+        <div class="card">
+            <img src="20.jpg" alt="Card 3">
+            <h3>Turnamen esport</h3>
+            <p>Turnamen esport yang diadakan di SMK Muhammadiyah memiliki kategori turnamen Free Fire dan Mobile Legends.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Nama Kamu" required>
+            <input type="email" placeholder="Email Kamu" required>
+            <textarea placeholder="Pesan Kamu" required></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

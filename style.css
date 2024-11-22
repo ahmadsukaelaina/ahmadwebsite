@@ -1,0 +1,167 @@
+/* Animasi Keyframes */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Default State: Tersembunyi */
+.scroll-effect {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    will-change: opacity, transform;
+    visibility: hidden;
+}
+
+/* State Saat Terlihat */
+.scroll-effect.visible {
+    animation: fadeSlideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    visibility: visible;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4880c;
+    padding: 1rem;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Home Section (Carousel) */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Carousel Controls */
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
